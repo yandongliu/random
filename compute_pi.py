@@ -7,7 +7,7 @@ MAX = 100000
 def is_in_quadrant(x, y, radius):
     return sqrt(x * x + y * y) <= radius
 
-def compute_pi(radius=5):
+def compute_pi(radius=1):
     count = 0
     in_count = 0
     while count < MAX:
@@ -17,7 +17,7 @@ def compute_pi(radius=5):
         count += 1
     return float(in_count)/count * 4.0
 
-def sample_one_point(radius=5):
+def sample_one_point(radius=1):
     return (random() * radius, random() * radius)
 
 
